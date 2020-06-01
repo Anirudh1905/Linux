@@ -1,0 +1,13 @@
+for i in *
+do
+	if [ -f $i ]
+	then
+		grep $1 $i > /dev/null
+		if [ $? -eq 0 ]
+		then
+			echo $i found
+		else
+			echo $i not found
+		fi
+	fi
+done

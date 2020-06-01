@@ -1,0 +1,8 @@
+echo Enter filename
+read name
+if [ -x $name ]
+then
+	echo Yes $name has Execute Permission
+else
+	echo No $name has No Execute Permission
+fi
